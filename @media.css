@@ -1,0 +1,21 @@
+@media only screen and (min-width: 320px),(max-width: 860px) {
+    body {
+        background-image: url('tree.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 12px;
+    }
+    .field {
+        text-align: center;
+        color: blueviolet;
+    }
+    .io {
+        opacity: 0.9;
+    }
+    .in {
+        width: 99%;
+    }
+    .out {
+        width: 99%;
+    }
+}

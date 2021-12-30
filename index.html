@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="@media.css">
+    <link rel="stylesheet" href="design.css">
+    <!--Bootstrap, FontAwesome & GG Font-->
+    <script src="https://kit.fontawesome.com/e9843c81b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Morse Code Translator</title>
+</head>
+<body>
+        <header style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="https://github.com/KayT98"><i class="fab fa-github"></i></a>
+                <h1 style="font-weight: bold; text-align: center; padding-top: 10px; font-family: 'Shizuru', cursive;">Morse Code Translator</h1>
+                <a class="navbar-brand" href="https://discordapp.com/users/573247578750058547/"><i class="fab fa-discord"></i></a>
+            </nav>
+        </header> 
+        
+        <div id="fieldset" class="field">
+            <h2 style="padding-bottom: 5px; font-family: 'Permanent Marker', cursive;">Translate Your Messages Here</h2>
+            <div id="io" class="io"> 
+                <textarea id="in" class="in" name="input" cols="50" rows="8" tabindex="0" placeholder="Paste your text here!"></textarea> <br>
+                    <br>
+                    <div class="btntooltip">
+                        <button id="copybtn" class="copybtn" onclick="copied()" onmouseout="copy()"><i class="fas fa-copy"></i></button>
+                        <span class="tooltip" id="tooltip">Copy to Clipboard</span>
+                    </div>           
+                <textarea id="out" class="out" name="output" cols="50" rows="8" tabindex="0" readonly placeholder="Output..."></textarea> 
+                <div id="btn">
+                    <button type="button" id="convert" class="btn btn-success btn-rounded" onclick="Text2Morse()">Click to translate</button>
+                    <button type="button" id="toggle" class="btn btn-dark btn-rounded" onclick="toggle()">Morse to Text</button>
+                </div>  
+            </div>   
+        </div>     
+    <!--Script here-->       
+    <script src="main.js"></script>
+</body>
+</html>
