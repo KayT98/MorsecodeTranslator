@@ -6,7 +6,8 @@ const morseCode = {
 					"M" : "--", "N" : "-.", "O" : "---", "P" : ".--.",
 					"Q" : "--.-", "R" : ".-.", "S" : "...", "T" : "-",
 					"U" : "..-", "V" : "...-", "W" : ".--", "X" : "-..-",
-					"Y" : "-.--", "Z" : "--..",
+					"Y" : "-.--", "Z" : "--..", "Ü" : "..--", "Á" : ".--.-",
+                    "É" : "..-..", "Ä": ".-.-", "Ñ" : "--.--", "Ö" : "---.", 
 
 					//numbers
 					"0" : "-----",
@@ -16,8 +17,8 @@ const morseCode = {
 
                     //symbols
                     "&" : ".-...", "'" : ".----.", "@" : ".--.-.",
-                    "Ü" : "..--", "," : "--..--", ":" : "---...",
-                    " " : "/"
+                    "," : "--..--", ":" : "---...", " " : "/", "(" : "-.--.",
+                    ")" : "-.--.-", "_" : "..--.-",
 }
 
 //changing options
@@ -73,7 +74,7 @@ function toggle() {
         return Object.keys(obj).find(key => obj[key] === val);
     }
 
-
+//convert morse code to text
     function Morse2Text(){
 
         let mc = document.getElementById('in').value;
@@ -86,6 +87,9 @@ function toggle() {
             }
             else if (i=='') {
                 return " ";
+            }
+            else if (i!=morseCode){
+                return "Wrong Morse code!";                
             }
             else {
                 return i;
