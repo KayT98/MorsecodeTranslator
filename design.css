@@ -1,94 +1,78 @@
 @media only screen and (min-width: 1200px) {
-html,body {
-    background-image: url("nature.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#fieldset {
-  position: relative;
-  float: left;
-  margin-left: 300px;
-  margin-top: 100px;
-  text-align: center;
-  padding: 20px 20px;
-  border-radius: 5%;
-  opacity: 0.8;
-}
-#fieldset:hover {
-  position: relative;
-  float: left;
-  margin-left: 300px;
-  margin-top: 100px;
-  text-align: center;
-  padding: 20px 20px;
-  border-radius: 5%;
-  opacity: 1;
-  box-shadow: 5px 5px 5px 5px white;
-}
-textarea {
-  border-radius: 8px;
-  word-wrap: break-word;
-  padding-left: 5px;
-}
-textarea:hover {
-  border-radius: 8px;
-  word-wrap: break-word;
-  padding-left: 5px;
-  border-color: red;
-}
-textarea:focus {
-  border-radius: 8px;
-  word-wrap: break-word;
-  padding-left: 5px;
-  border-color: red;
-  outline: none;
-}
-#copybtn {
-  border: none;
-  padding: 0;
-  background: none;
-}
-.btntooltip {
-  position: absolute;
-  display:inline-block;
-  margin: 0px 20px 10px 480px;
-}
-.btntooltip .tooltip {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -70px;
-  opacity: 0;
-  transition: opacity 0.3s;
-} 
-.btntooltip .tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-.btntooltip:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-.img {
-  position: absolute;
-  margin-top: -120%;
-  margin-left: 470px;
-}
-}
+  html,body {
+      background-image: url("nature.jpg");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  #fieldset {
+    position: relative;
+    float: left;
+    margin-left: 685px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px 20px;
+    opacity: 0.8;
+  }
+  
+  textarea {
+    border-radius: 8px;
+    word-wrap: break-word;
+    padding-left: 5px;
+  }
+  textarea:hover {
+    border-radius: 8px;
+    word-wrap: break-word;
+    padding-left: 5px;
+    border-color: red;
+  }
+  textarea:focus {
+    border-radius: 8px;
+    word-wrap: break-word;
+    padding-left: 5px;
+    border-color: red;
+    outline: none;
+  }
+  #copybtn {
+    border: none;
+    padding: 0;
+    background: none;
+  }
+  .btntooltip {
+    position: absolute;
+    display:inline-block;
+    margin: 0px 20px 10px 480px;
+  }
+  .btntooltip .tooltip {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  } 
+  .btntooltip .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .btntooltip:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  }

@@ -18,13 +18,15 @@ const morseCode = {
                     //symbols
                     "&" : ".-...", "'" : ".----.", "@" : ".--.-.",
                     "," : "--..--", ":" : "---...", " " : "/", "(" : "-.--.",
-                    ")" : "-.--.-", "_" : "..--.-",
+                    ")" : "-.--.-", "_" : "..--.-", "!" : "-.-.--", "=" : "-...-",
+                    "+" : ".-.-.",  '"' : ".-..-.", "$" : "...-..-", "." : ".-.-.-",
+                    "?" : "..--..",
 }
 
 //changing options
 function toggle() {
-    const decode = "Morse to Text";
-    const encode = "Text to Morse";
+    const decode = "Morse2Text";
+    const encode = "Text2Morse";
 
     let toggleBtn = document.getElementById('toggle').innerHTML;
 
